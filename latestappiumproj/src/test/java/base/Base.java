@@ -61,10 +61,12 @@ public class Base {
 		cap.setAutoGrantPermissions(true);
 		cap.setNoReset(true);
 		cap.setAllowTestPackages(true);
+		cap.setNewCommandTimeout(Duration.ofSeconds(10));
 		
 		
 		driver=new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"),cap);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+	
 		return driver;
 	}
 	

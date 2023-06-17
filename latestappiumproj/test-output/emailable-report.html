@@ -9,10 +9,52 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">68,759</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">23,351</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">gesture.SwipeGesture</td><td><a href="#m0">swipe</a></td><td rowspan="1">1686972578004</td><td rowspan="1">7371</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">gesture.SwipeGesture</td><td><a href="#m0">init</a></td><td rowspan="1">1686995351453</td><td rowspan="1">23219</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">gesture.SwipeGesture</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1686995374916</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">gesture.SwipeGesture</td><td><a href="#m2">swipe</a></td><td rowspan="1">1686995374687</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">gesture.SwipeGesture#swipe</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">gesture.SwipeGesture#init</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up 
+Host info: host: &apos;RAJASEKAR&apos;, ip: &apos;192.168.177.46&apos;
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, newSession {capabilities=[{appium:noReset=true, appium:autoGrantPermissions=true, appium:newCommandTimeout=10, appium:avdLaunchTimeout=600000, appium:appActivity=io.appium.android.apis.ApiDemos, appium:allowTestPackages=true, appium:avd=Pixel_4_XL_API_30, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:\Users\PC 1\git\repository\latestappiumproj/ApiDemos.apk, appium:appPackage=io.appium.android.apis}], desiredCapabilities=Capabilities {appium:allowTestPackages: true, appium:app: C:\Users\PC 1\git\repositor..., appium:appActivity: io.appium.android.apis.ApiD..., appium:appPackage: io.appium.android.apis, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:avd: Pixel_4_XL_API_30, appium:avdLaunchTimeout: 600000, appium:newCommandTimeout: 10, appium:noReset: true, platformName: ANDROID}}]
+Capabilities {appium:allowTestPackages: true, appium:app: C:\Users\PC 1\git\repositor..., appium:appActivity: io.appium.android.apis.ApiD..., appium:appPackage: io.appium.android.apis, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:avd: Pixel_4_XL_API_30, appium:avdLaunchTimeout: 600000, appium:newCommandTimeout: 10, appium:noReset: true, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:154)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at base.Base.getDriver(Base.java:67)
+	at gesture.SwipeGesture.init(SwipeGesture.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">gesture.SwipeGesture#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">gesture.SwipeGesture#swipe</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up 
+Host info: host: &apos;RAJASEKAR&apos;, ip: &apos;192.168.177.46&apos;
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, newSession {capabilities=[{appium:noReset=true, appium:autoGrantPermissions=true, appium:newCommandTimeout=10, appium:avdLaunchTimeout=600000, appium:appActivity=io.appium.android.apis.ApiDemos, appium:allowTestPackages=true, appium:avd=Pixel_4_XL_API_30, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:\Users\PC 1\git\repository\latestappiumproj/ApiDemos.apk, appium:appPackage=io.appium.android.apis}], desiredCapabilities=Capabilities {appium:allowTestPackages: true, appium:app: C:\Users\PC 1\git\repositor..., appium:appActivity: io.appium.android.apis.ApiD..., appium:appPackage: io.appium.android.apis, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:avd: Pixel_4_XL_API_30, appium:avdLaunchTimeout: 600000, appium:newCommandTimeout: 10, appium:noReset: true, platformName: ANDROID}}]
+Capabilities {appium:allowTestPackages: true, appium:app: C:\Users\PC 1\git\repositor..., appium:appActivity: io.appium.android.apis.ApiD..., appium:appPackage: io.appium.android.apis, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:avd: Pixel_4_XL_API_30, appium:avdLaunchTimeout: 600000, appium:newCommandTimeout: 10, appium:noReset: true, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:154)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at base.Base.getDriver(Base.java:67)
+	at gesture.SwipeGesture.init(SwipeGesture.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
