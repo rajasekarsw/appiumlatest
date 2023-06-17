@@ -25,5 +25,6 @@ public class SwipeGesture extends Base{
 		ViewsPage viewsPage=new ViewsPage(driver);
 		viewsPage.clickViews();
 	}
+	//
 
 }
